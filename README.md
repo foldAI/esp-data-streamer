@@ -140,14 +140,6 @@ See the [example project](https://github.com/foldAI/esp-data-streamer) for a com
 
 ## Technical Details
 
-### Memory Usage
-
-- Configurable chunk size (default: 4KB)
-- Single allocation per streaming session
-- No dynamic allocations during streaming
-
-### Performance Considerations
-
 - Chunk size affects memory usage vs. performance trade-off
 - Directory streaming uses flat traversal (non-recursive)
 - Range filtering performed during traversal
