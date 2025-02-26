@@ -1,0 +1,19 @@
+# User-specific stuff
+.idea/
+
+# CMake
+build/
+build-host-test/
+
+# ca
+ca_scripts/ca/
+
+# python
+python/data-streamer/.idea
+python/data-streamer/download
+python/data-streamer/client_config.yml
+
+# ESP-IDF
+managed_components/
+sdkconfig
+sdkconfig.old

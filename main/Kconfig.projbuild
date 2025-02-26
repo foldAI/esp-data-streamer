@@ -1,0 +1,38 @@
+menu "Data Streamer example"
+    config EXAMPLE_DATA_STREAMER_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID (network name) to connect to.
+
+    config EXAMPLE_DATA_STREAMER_WIFI_PASS
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2) to use.
+
+    config EXAMPLE_DATA_STREAMER_RETRY_MAX
+        int "Max N retries for wifi connection"
+        default 10
+        help
+            Max number of retries for wifi connection
+
+    config EXAMPLE_DATA_STREAMER_HOSTNAME
+        string "mDNS hostname"
+        default "esp-host"
+        help
+            mDNS hostname (max 32 characters). If set to MAC, it will internally be translated to esp-<MAC of device>
+
+    config EXAMPLE_DATA_STREAMER_FILE_PATH
+        string "Single file path to stream"
+        default ""
+        help
+            Path to the file that will be streamed. Leave empty to disable single file streaming.
+
+    config EXAMPLE_DATA_STREAMER_DIR_PATH
+        string "Directory path to stream"
+        default ""
+        help
+            Path to the directory that will be streamed. Leave empty to disable directory streaming.
+
+endmenu

@@ -1,0 +1,17 @@
+menu "Data streamer configuration"
+    config DATA_STREAMER_CHUNK_SIZE
+        int "Chunk size for streaming (bytes)"
+        default 4096
+        range 1024 32768
+        help
+            Size of chunks in chunked transfer encoding.
+            Larger values use more memory but may improve performance.
+            For larger values, you might have to tweak the server stack size in configuration.
+
+    config DATA_STREAMER_MULTIPART_BOUNDARY
+        string "Multipart boundary string"
+        default "*~*-._.-*BOUNDARY*-._.-*~*"
+        help
+            Boundary string used in multipart/mixed responses.
+
+endmenu
