@@ -131,7 +131,7 @@ for the core library are under `Component config → Data streamer configuration
 
 ## Example Project
 
-See the [example project](link-to-example) for a complete implementation using:
+See the [example project](https://github.com/foldAI/esp-data-streamer) for a complete implementation using:
 - Adafruit Metro ESP32-S3 N16R8 as development device
 - SD card as VFS mounting point
 - mDNS for device discovery
